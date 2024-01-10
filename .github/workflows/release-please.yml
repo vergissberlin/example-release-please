@@ -7,6 +7,9 @@ permissions:
   contents: write
   pull-requests: write
   pages: write
+  security-events: write
+  statuses: write
+  packages: write
 
 name: Release Please
 
@@ -51,7 +54,6 @@ jobs:
           echo "Created: ${{ steps.release.outputs.release_created }}"
           echo "Tag name: ${{ steps.release.outputs.tag_name }}"
           ls -lisah
-
 
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
