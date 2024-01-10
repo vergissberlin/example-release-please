@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/vergissberlin/example-release-please/compare/v0.1.0...v0.2.0) (2024-01-10)
+
+
+### Features
+
+* One more feature ([89dcd82](https://github.com/vergissberlin/example-release-please/commit/89dcd82316c4ec49049a7417b8ee6d1f7b4d3e20))
+
 ## [0.1.0](https://github.com/vergissberlin/example-release-please/compare/v0.0.1...v0.1.0) (2024-01-10)
 
 
