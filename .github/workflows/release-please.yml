@@ -96,11 +96,9 @@ jobs:
           pattern: my-artifact-*
           merge-multiple: true
 
-      - name: List all files
+      - name: Print out ${{ matrix.runs-on }}.txt
         run: |
-          ls -R my-artifact
-          cat my-artifact/foo.txt
-          cat my-artifact/bar.txt
+          cat my-artifact/${{ matrix.runs-on }}.txt
 
       - uses: actions/upload-release-asset@v1
         with:
