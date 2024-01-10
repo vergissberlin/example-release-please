@@ -1,36 +1,57 @@
-name: release
-
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  pages: write
+  security-events: write
+  statuses: write
+  packages: write
+
+name: Release Please
 
 jobs:
-  build_release:
-    name: build_release
+  release:
+    name: 🏗️ Build
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Make a file with a lot of repeated text
+        run: |
+          for i in {1..1000}; do echo -n 'foo' >> foo.txt; done
+          for i in {1..1000}; do echo -n 'bar' >> bar.txt; done
+      - uses: actions/upload-artifact@v4
         with:
-          fetch-depth: 0
-      - name: release
-        uses: actions/create-release@v1
-        id: create_release
+          name: firmware
+          path: foo.txt
+          compression-level: 0 # 9 = maximum compression
+
+      - uses: google-github-actions/release-please-action@v4
+        id: release
         with:
-          draft: false
-          prerelease: false
-          release_name: ${{ steps.version.outputs.version }}
-          tag_name: ${{ github.ref }}
-          body_path: CHANGELOG.md
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-      - name: Upload artifact
+          release-type: simple
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
+      - name: Get the release URL
+        run: |
+          echo "Upload URL: ${{ steps.release.outputs.upload_url }}"
+
+      - name: Upload Release Asset
+        if: ${{ steps.release.outputs.upload_url }}
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./README.md
-          asset_name: README.md
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: ./foo.txt
+          asset_name: foo.txt
           asset_content_type: text/plain
+
+      #- name: Upload Release Artifact
+      #  if: ${{ steps.release.outputs.release_created }}
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #  run: gh release upload ${{ steps.release.outputs.tag_name }} ./foo.txt ./foo.txt
