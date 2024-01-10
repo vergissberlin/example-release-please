@@ -1,5 +1,7 @@
 # Example for release please
 
+[![Release Please](https://github.com/vergissberlin/example-release-please/actions/workflows/release-please.yml/badge.svg)](https://github.com/vergissberlin/example-release-please/actions/workflows/release-please.yml)
+
 This is an example repository for [release-please](https://github.com/googleapis/release-please).
 
 ## 📝 Release notes
