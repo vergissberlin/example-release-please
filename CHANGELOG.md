@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.7](https://github.com/vergissberlin/example-release-please/compare/v0.6.6...v0.6.7) (2024-01-10)
+
+
+### Bug Fixes
+
+* Add more foos ([02806f4](https://github.com/vergissberlin/example-release-please/commit/02806f4dbacd07c160c81a0fdf2e2028adb5a252))
+* Use matrix for upload only ([ff7a579](https://github.com/vergissberlin/example-release-please/commit/ff7a579af9d6c28fef214b4d68c0b1d3a2454705))
+
 ## [0.6.6](https://github.com/vergissberlin/example-release-please/compare/v0.6.5...v0.6.6) (2024-01-10)
 
 
