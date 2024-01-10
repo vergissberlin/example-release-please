@@ -44,7 +44,6 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
       - name: Get the release URL
         run: |
-          echo "Uploading release asset"
           echo "Release URL: ${{ steps.release.outputs.release_url }}"
           echo "Upload URL: ${{ steps.release.outputs.upload_url }}"
           echo "Asset name: ${{ steps.release.outputs.asset_name }}"
