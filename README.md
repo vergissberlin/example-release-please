@@ -11,3 +11,4 @@ This is an example repository for [release-please](https://github.com/googleapis
 - It would be nice even with docs
 - Docs was not visible, whats about a fix after creation of the pull request?
 - Do I have to mention the PR number in the commit message?
+- I see, it automatically adds the fixes to the existing pull requests. That's nice!
