@@ -18,7 +18,7 @@ jobs:
     steps:    
       - name: Make a file with a lot of repeated text
         run: |
-          for i in {1..10000}; do echo -n 'foobar' >> foobar.txt; done
+          for i in {1..100000}; do echo -n 'foobar' >> foobar.txt; done
       - uses: actions/upload-artifact@v4
         with:
           name: my-artifact
