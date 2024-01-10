@@ -54,8 +54,9 @@ jobs:
           echo "Created: ${{ steps.release.outputs.release_created }}"
           echo "Tag name: ${{steps.release.outputs.tag_name}}"
           ls -lisah
-          echo "ref name:  ${{ github.ref_name }}"
           echo "Tag: ${{steps.release.outputs.major}}.${{ steps.release.outputs.minor }}"
+          echo "ref name:  ${{ github.ref_name }}"
+          echo "github:  ${{ github }}"
 
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
