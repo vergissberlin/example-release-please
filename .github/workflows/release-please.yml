@@ -84,6 +84,7 @@ jobs:
   upload:
     name: 🚀 Upload Artifacts
     runs-on: ubuntu-latest
+    if: ${{ needs.release.outputs.upload-url }}
     needs: release
     strategy:
       matrix:
