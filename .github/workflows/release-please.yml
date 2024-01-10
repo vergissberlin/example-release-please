@@ -17,6 +17,17 @@ jobs:
   build:
     name: 🏗️ Build
     runs-on: ubuntu-latest
+    outputs:
+      release-url: ${{ steps.release.outputs.release_url }}
+      upload-url: ${{ steps.release.outputs.upload_url }}
+      asset-name: ${{ steps.release.outputs.asset_name }}
+      asset-id: ${{ steps.release.outputs.asset_id }}
+      asset-url: ${{ steps.release.outputs.asset_url }}
+      release-created: ${{ steps.release.outputs.release_created }}
+      tag-name: ${{steps.release.outputs.tag_name}}
+      major: ${{steps.release.outputs.major}}
+      minor: ${{steps.release.outputs.minor}}
+      dirk: "Dirk"
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -54,6 +65,12 @@ jobs:
           echo "Tag: ${{steps.release.outputs.major}}.${{ steps.release.outputs.minor }}"
           echo "ref name:  ${{ github.ref_name }}"
           echo "github:  ${{ github }}"
+          echo "repositor:  ${{ github.repository }} or ${{ github.repository_owner }}"
+          echo "Dirk: ${{ steps.release.outputs.dirk }}"
+          echo "Dirk: ${{ needs.release.outputs.dirk }}"
+          echo "Dirk: ${{ steps.build.outputs.dirk }}"
+          echo "Dirk: ${{ needs.build.outputs.dirk }}"
+
 
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
