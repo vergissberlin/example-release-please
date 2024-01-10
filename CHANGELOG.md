@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/vergissberlin/example-release-please/compare/v0.4.1...v0.5.0) (2024-01-10)
+
+
+### Features
+
+* Uploud the assets to release page ([cd66bb8](https://github.com/vergissberlin/example-release-please/commit/cd66bb831da1770cfa80a2f7ba5e10a45fd0e8c1))
+
 ## [0.4.1](https://github.com/vergissberlin/example-release-please/compare/v0.4.0...v0.4.1) (2024-01-10)
 
 
