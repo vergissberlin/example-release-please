@@ -54,7 +54,7 @@ jobs:
     needs: release
     strategy:
       matrix:
-        runs-on: [foo, bar, moo]
+        runs-on: [foo, bar, moo, boo, doo]
     steps:
       - uses: actions/download-artifact@v4
         with:
