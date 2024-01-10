@@ -63,12 +63,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_path: ./foobar.txt
-          asset_name: foobar.txt
+          asset_path: ./foo.txt
+          asset_name: foo.txt
           asset_content_type: text/plain
 
       #- name: Upload Release Artifact
       #  if: ${{ steps.release.outputs.release_created }}
       #  env:
       #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #  run: gh release upload ${{ steps.release.outputs.tag_name }} ./foobar.txt ./foobar.txt
+      #  run: gh release upload ${{ steps.release.outputs.tag_name }} ./foo.txt ./foo.txt
