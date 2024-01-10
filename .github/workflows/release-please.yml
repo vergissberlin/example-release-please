@@ -57,9 +57,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_path: ./README.md
-          asset_name: README.md
-          asset_content_type: application/markdown
+          asset_path: ./foobar.txt
+          asset_name: foobar.txt
+          asset_content_type: text/plain
 
       #- name: Upload Release Artifact
       #  if: ${{ steps.release.outputs.release_created }}
