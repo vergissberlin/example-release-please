@@ -15,8 +15,8 @@ jobs:
     name: 🏗️ Build
     runs-on: ubuntu-latest
     environment:
-        name: production
-    steps:    
+      name: production
+    steps:
       - name: Make a file with a lot of repeated text
         run: |
           for i in {1..1000000}; do echo -n 'foobar' >> foobar.txt; done
@@ -26,21 +26,24 @@ jobs:
           path: foobar.txt
           compression-level: 4 # 9 = maximum compression
 
-
   release:
     runs-on: ubuntu-latest
-    name:  📦 Release 
+    name: 📦 Release
     needs: build
     environment:
-        name: production
+      name: production
     steps:
+      - name: Download Artefacts and Upload to Release
+        uses: actions/download-artifact@v2
+        with:
+          name: firmware
+          path: downloaded-artefacts
       - uses: google-github-actions/release-please-action@v4
         with:
-          # this assumes that you have created a personal access token
-          # (PAT) and configured it as a GitHub action secret named
-          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
-          # I did!
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
-          # this is a built-in strategy in release-please, see "Action Inputs"
-          # for more options
           release-type: simple
+      - name: Upload Release Artifact
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload ${{ steps.release.outputs.tag_name }} ./downloaded-artefacts/firmware.zip
