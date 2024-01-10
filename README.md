@@ -14,6 +14,7 @@ This is an example repository for [release-please](https://github.com/googleapis
 - I see, it automatically adds the fixes to the existing pull requests. That's nice!
 - And add a fix to the feature super branch?
 - I like that fixes
+- Add new feature for testing
 
 ## 🐣 Features
 
