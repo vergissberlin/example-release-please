@@ -17,6 +17,8 @@ jobs:
     environment:
       name: production
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Make a file with a lot of repeated text
         run: |
           for i in {1..10000}; do echo -n 'foobar' >> foobar.txt; done
@@ -35,8 +37,8 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           release-type: simple
-      - name: Upload Release Artifact
-        # if: ${{ steps.release.outputs.release_created }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ steps.release.outputs.tag_name }} ./foobar.txt ./foobar.txt
+      #- name: Upload Release Artifact
+      #  if: ${{ steps.release.outputs.release_created }}
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #  run: gh release upload ${{ steps.release.outputs.tag_name }} ./foobar.txt ./foobar.txt
