@@ -13,6 +13,13 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Do I have to mention the PR number in the commit message?
 - I see, it automatically adds the fixes to the existing pull requests. That's nice!
 
+## 🐣 Features
+
+- Create a release pull request
+- Add a label to the pull request
+- Creates release notes
+- Creates CHANGELOG.md
+
 ## 📘 Documentation
 
 - How to implement GitHub Action with "Relase Please" [https://github.com/google-github-actions/release-please-action]
