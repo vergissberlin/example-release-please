@@ -10,3 +10,4 @@ This is an example repository for [release-please](https://github.com/googleapis
 - If we have multiple commits?
 - It would be nice even with docs
 - Docs was not visible, whats about a fix after creation of the pull request?
+- Do I have to mention the PR number in the commit message?
