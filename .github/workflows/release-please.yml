@@ -7,9 +7,6 @@ permissions:
   contents: write
   pull-requests: write
   pages: write
-  security-events: write
-  statuses: write
-  packages: write
 
 name: Release Please
 
@@ -61,9 +58,3 @@ jobs:
           asset_path: ./bar.txt
           asset_name: bar.txt
           asset_content_type: text/plain
-
-      #- name: Upload Release Artifact
-      #  if: ${{ steps.release.outputs.release_created }}
-      #  env:
-      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #  run: gh release upload ${{ steps.release.outputs.tag_name }} ./foo.txt ./foo.txt
