@@ -8,3 +8,4 @@ This is an example repository for [release-please](https://github.com/googleapis
 - And another important fix here
 - We are not done yet. How about combining multiple commits in one pull request?
 - If we have multiple commits?
+- It would be nice even with docs
