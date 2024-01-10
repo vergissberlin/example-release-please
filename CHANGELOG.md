@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/vergissberlin/example-release-please/compare/v0.2.0...v0.3.0) (2024-01-10)
+
+
+### Features
+
+* Features will come every day ([4c5f7e9](https://github.com/vergissberlin/example-release-please/commit/4c5f7e912a3c3ce5da6eb00640c05e33d346409d))
+
 ## [0.2.0](https://github.com/vergissberlin/example-release-please/compare/v0.1.0...v0.2.0) (2024-01-10)
 
 
