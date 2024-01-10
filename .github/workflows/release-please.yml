@@ -37,6 +37,17 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           release-type: simple
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./README.md
+          asset_name: README.md
+          asset_content_type: application/markdown
+
       #- name: Upload Release Artifact
       #  if: ${{ steps.release.outputs.release_created }}
       #  env:
