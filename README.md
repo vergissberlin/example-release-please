@@ -20,6 +20,10 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Creates release notes
 - Creates CHANGELOG.md
 
+### Custom features
+
+- I just added a new feature in a feature branch. Let's see what happens.
+
 ## 📘 Documentation
 
 - How to implement GitHub Action with "Relase Please" [https://github.com/google-github-actions/release-please-action]
