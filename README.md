@@ -15,6 +15,7 @@ This is an example repository for [release-please](https://github.com/googleapis
 - And add a fix to the feature super branch?
 - I like that fixes
 - Add new feature for testing
+- Snd one more feature
 
 ## 🐣 Features
 
