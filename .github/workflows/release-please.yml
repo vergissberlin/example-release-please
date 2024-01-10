@@ -50,11 +50,15 @@ jobs:
         run: |
           echo "Upload URL: ${{ steps.release.outputs.upload_url }}"
 
-      # Download assets
       - uses: actions/download-artifact@v4
         with:
           name: foo
           path: ./foo.txt
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: bar
+          path: ./bar.txt
 
       - name: List all files
         run: |
