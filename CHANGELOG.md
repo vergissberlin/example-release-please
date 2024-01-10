@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.2](https://github.com/vergissberlin/example-release-please/compare/v0.6.1...v0.6.2) (2024-01-10)
+
+
+### Bug Fixes
+
+* Download artifacts ([ea0a876](https://github.com/vergissberlin/example-release-please/commit/ea0a87607e47ae81d5f7e15bc4237b028f7c301c))
+* Download artifacts bar ([57712b4](https://github.com/vergissberlin/example-release-please/commit/57712b43748c192a7bdf2700456573aec4fa422d))
+* List all files ([9ebd136](https://github.com/vergissberlin/example-release-please/commit/9ebd13601139d67a8e51aa0827712769d18e9ee9))
+* List all files separate job ([70b546a](https://github.com/vergissberlin/example-release-please/commit/70b546a5c114d9784d4a56107d5016452ca7f7f1))
+
 ## [0.6.1](https://github.com/vergissberlin/example-release-please/compare/v0.6.0...v0.6.1) (2024-01-10)
 
 
