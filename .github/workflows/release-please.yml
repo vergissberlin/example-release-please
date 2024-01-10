@@ -33,11 +33,12 @@ jobs:
           release-type: simple
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
 
-      - name: Get the release URL
+      - name: Print the release URL if present
+        if: ${{ steps.release.outputs.upload_url }}
         run: |
           echo "Upload URL: ${{ steps.release.outputs.upload_url }}"
 
-      - name: Upload Release Asset foo
+      - name: Upload release asset foo
         if: ${{ steps.release.outputs.upload_url }}
         uses: actions/upload-release-asset@v1
         env:
@@ -48,7 +49,7 @@ jobs:
           asset_name: foo.txt
           asset_content_type: text/plain
 
-      - name: Upload Release Asset bar
+      - name: Upload release asset bar
         if: ${{ steps.release.outputs.upload_url }}
         uses: actions/upload-release-asset@v1
         env:
