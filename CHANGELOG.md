@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.6.3](https://github.com/vergissberlin/example-release-please/compare/v0.6.2...v0.6.3) (2024-01-10)
+
+
+### Bug Fixes
+
+* Add the moo ([7336316](https://github.com/vergissberlin/example-release-please/commit/733631686022144ee7f1ce4742e1e4a2e13140db))
+* Cat the bar ([92db83e](https://github.com/vergissberlin/example-release-please/commit/92db83ecc846bdace6bf274227e2a08f27ee2435))
+* Cut the door ([386dbcd](https://github.com/vergissberlin/example-release-please/commit/386dbcdd33fb3613beae4152acbc35929e694216))
+* Ls foo ([e42b767](https://github.com/vergissberlin/example-release-please/commit/e42b767db26856f8042a1c33c8431658bb128550))
+* No bar ([f2c3e99](https://github.com/vergissberlin/example-release-please/commit/f2c3e9930b8a87b406850be65370e7018ad85ec7))
+* No cat ([eda8fb9](https://github.com/vergissberlin/example-release-please/commit/eda8fb905c38accfa369a4864fc710d035db4b14))
+* No cat ls ([b483cc8](https://github.com/vergissberlin/example-release-please/commit/b483cc86ae15e50d019a719110fa2edc2659f376))
+* Not content problem ([087133c](https://github.com/vergissberlin/example-release-please/commit/087133c00e887473da0327850b826470196fae30))
+* Use extension ([a4559c3](https://github.com/vergissberlin/example-release-please/commit/a4559c328719e0264bf282ff4409a21b382840d1))
+* Use extension in name also ([39f5daf](https://github.com/vergissberlin/example-release-please/commit/39f5dafd8f565037b123aee7aba39ba2302dbdb9))
+* Use relative path ([d78c33c](https://github.com/vergissberlin/example-release-please/commit/d78c33c60efb02d2ee2e1877e065a1708e442c50))
+
 ## [0.6.2](https://github.com/vergissberlin/example-release-please/compare/v0.6.1...v0.6.2) (2024-01-10)
 
 
