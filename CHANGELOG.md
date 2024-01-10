@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.0](https://github.com/vergissberlin/example-release-please/compare/v0.3.0...v0.4.0) (2024-01-10)
+
+
+### Features
+
+* Using asset uploader ([e35f1b3](https://github.com/vergissberlin/example-release-please/commit/e35f1b33fbc063ef0dc13de7ad72c980d27dbf1a))
+
+
+### Bug Fixes
+
+* Upload url object path ([3d44959](https://github.com/vergissberlin/example-release-please/commit/3d44959bd80abfbc2b8285f977a224d1e71e313d))
+* Using the repository ([d9c9ef6](https://github.com/vergissberlin/example-release-please/commit/d9c9ef640a50b70cb90b0bb231d44e0db211d5da))
+
 ## [0.3.0](https://github.com/vergissberlin/example-release-please/compare/v0.2.0...v0.3.0) (2024-01-10)
 
 
