@@ -26,13 +26,6 @@ jobs:
           path: foobar.txt
           compression-level: 0 # 9 = maximum compression
 
-  release:
-    runs-on: ubuntu-latest
-    name: 📦 Release
-    needs: build
-    environment:
-      name: production
-    steps:
       - name: Download Artefacts and Upload to Release
         uses: actions/download-artifact@v2
         with:
