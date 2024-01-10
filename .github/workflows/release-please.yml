@@ -63,6 +63,8 @@ jobs:
       - name: List all files
         run: |
           ls -lisah
+          cat foo.txt
+          cat bar.txt
 
       - name: Upload release asset foo
         if: ${{ steps.release.outputs.upload_url }}
