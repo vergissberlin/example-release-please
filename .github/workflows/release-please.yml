@@ -47,40 +47,6 @@ jobs:
         run: |
           echo "Upload URL: ${{ steps.release.outputs.upload_url }}"
 
-      - uses: actions/download-artifact@v4
-        with:
-          path: my-artifact
-          pattern: my-artifact-*
-          merge-multiple: true
-
-      - name: List all files
-        run: |
-          ls -R my-artifact
-          cat my-artifact/foo.txt
-          cat my-artifact/bar.txt
-
-      - name: Upload release asset foo
-        if: ${{ steps.release.outputs.upload_url }}
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_path: ./my-artifact/foo.txt
-          asset_name: foo.txt
-          asset_content_type: text/plain
-
-      - name: Upload release asset bar
-        if: ${{ steps.release.outputs.upload_url }}
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_path: ./my-artifact/bar.txt
-          asset_name: bar.txt
-          asset_content_type: text/plain
-
   upload:
     name: 🚀 Upload Artifacts
     runs-on: ubuntu-latest
@@ -104,7 +70,7 @@ jobs:
         with:
           upload_url: ${{ needs.release.outputs.upload-url }}
           asset_path: ./my-artifact/${{ matrix.runs-on }}.txt
-          asset_name: dirk-${{ matrix.runs-on }}.txt
+          asset_name: ${{ matrix.runs-on }}.txt
           asset_content_type: text/plain
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
