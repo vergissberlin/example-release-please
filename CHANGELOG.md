@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.1](https://github.com/vergissberlin/example-release-please/compare/v0.6.0...v0.6.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* Fix typo in job name ([f43ca6d](https://github.com/vergissberlin/example-release-please/commit/f43ca6dabf31647577565007262e3b594a8f147a))
+* relases needs build ([75d5e22](https://github.com/vergissberlin/example-release-please/commit/75d5e22b3d08ed5c8a49ddcac0558771d85e9968))
+* Split jobs again ([814b1d4](https://github.com/vergissberlin/example-release-please/commit/814b1d4a2b768901bffbdb2f3582b3dc59f787ab))
+
 ## [0.6.0](https://github.com/vergissberlin/example-release-please/compare/v0.5.0...v0.6.0) (2024-01-10)
 
 
