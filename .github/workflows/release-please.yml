@@ -81,8 +81,8 @@ jobs:
           asset_name: bar.txt
           asset_content_type: text/plain
 
-  upload-artifact:
-    name: 🚀 Upload Artifact
+  upload:
+    name: 🚀 Upload Artifacts
     runs-on: ubuntu-latest
     needs: release
     strategy:
