@@ -54,9 +54,9 @@ jobs:
 
       - name: List all files
         run: |
-          ls -R
-          ls -lisah
           ls -R my-artifact
+          cat my-artifact/foo.txt
+          cat my-artifact/bar.txt
 
       - name: Upload release asset foo
         if: ${{ steps.release.outputs.upload_url }}
