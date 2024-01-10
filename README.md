@@ -12,6 +12,7 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Docs was not visible, whats about a fix after creation of the pull request?
 - Do I have to mention the PR number in the commit message?
 - I see, it automatically adds the fixes to the existing pull requests. That's nice!
+- And add a fix to the feature super branch?
 
 ## 🐣 Features
 
@@ -19,6 +20,10 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Add a label to the pull request
 - Creates release notes
 - Creates CHANGELOG.md
+
+### Custom features
+
+- I just added a new feature in a feature branch. Let's see what happens.
 
 ## 📘 Documentation
 
