@@ -44,7 +44,7 @@ jobs:
         with:
           release-type: simple
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
-          config-file: .releasepleaserc.json
+          # config-file: .releasepleaserc.json
           # manifest-file: .releasepleaserc.json
 
       - name: Print the release URL if present
