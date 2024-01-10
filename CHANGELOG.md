@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.4.1](https://github.com/vergissberlin/example-release-please/compare/v0.4.0...v0.4.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* All github ([76eebf9](https://github.com/vergissberlin/example-release-please/commit/76eebf96d7b9a27fd9efdde35e5a17bfbfdf0789))
+* File name ([1fe77a0](https://github.com/vergissberlin/example-release-please/commit/1fe77a03f68de8839c6dba65a65ef72b108ff533))
+* Missing apo ([da99932](https://github.com/vergissberlin/example-release-please/commit/da99932402c3aa940495057a31f6ef55f25e001e))
+* remove line ([289764b](https://github.com/vergissberlin/example-release-please/commit/289764b43a2d304c41a75a11f70ce68f373f65bc))
+* Sort env variables ([7cfe16e](https://github.com/vergissberlin/example-release-please/commit/7cfe16ecf2a7909bc62327d4c11ee08daa459f7d))
+* Try to get information ([9e3c14d](https://github.com/vergissberlin/example-release-please/commit/9e3c14d45b98ea328feec4abacf2b9425f1e7e35))
+* Try to get information yes ([783ebcc](https://github.com/vergissberlin/example-release-please/commit/783ebcc7e4839cc18972db3be60254a7f2715672))
+* Try to set an id ([009e76b](https://github.com/vergissberlin/example-release-please/commit/009e76b3a3922c91042bc492a1a37ba5110ab30e))
+* Upload variable ([339e392](https://github.com/vergissberlin/example-release-please/commit/339e392cc98793102f629d15c529a3dafdadd30b))
+* Upload variable removed ([7afdae6](https://github.com/vergissberlin/example-release-please/commit/7afdae6b58833fa844aaace83719d2bffaad5b15))
+
 ## [0.4.0](https://github.com/vergissberlin/example-release-please/compare/v0.3.0...v0.4.0) (2024-01-10)
 
 
