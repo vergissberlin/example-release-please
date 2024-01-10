@@ -14,7 +14,7 @@ permissions:
 name: Release Please
 
 jobs:
-  build:
+  release:
     name: 🏗️ Build
     runs-on: ubuntu-latest
     outputs:
