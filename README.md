@@ -2,7 +2,7 @@
 
 This is an example repository for [release-please](https://github.com/googleapis/release-please).
 
-## Release notes
+## 📝 Release notes
 
 - This ist an very important fix
 - And another important fix here
@@ -13,7 +13,7 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Do I have to mention the PR number in the commit message?
 - I see, it automatically adds the fixes to the existing pull requests. That's nice!
 
-## Documentation
+## 📘 Documentation
 
 - How to implement GitHub Action with "Relase Please" [https://github.com/google-github-actions/release-please-action]
 - How to configure [Release Please](https://github.com/googleapis/release-please)
