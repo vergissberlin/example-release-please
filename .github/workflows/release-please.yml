@@ -15,7 +15,7 @@ jobs:
     name: 🏗️ Build
     strategy:
       matrix:
-        runs-on: [foo, bar]
+        runs-on: [foo, bar, moo]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
