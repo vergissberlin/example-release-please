@@ -80,3 +80,21 @@ jobs:
           asset_path: ./my-artifact/bar.txt
           asset_name: bar.txt
           asset_content_type: text/plain
+
+  upload-artifact:
+    name: 🚀 Upload Artifact
+    runs-on: ubuntu-latest
+    needs: release
+    strategy:
+      matrix:
+        runs-on: [foo, bar, moo]
+        upload_url: ${{ fromJson(needs.release.outputs.upload_url) }}
+    steps:
+      - uses: actions/upload-release-asset@v1
+        with:
+            upload_url: ${{ matrix.upload_url }}
+            asset_path: ./my-artifact/${{ matrix.runs-on }}.txt
+            asset_name: dirk-${{ matrix.runs-on }}.txt
+            asset_content_type: text/plain
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
