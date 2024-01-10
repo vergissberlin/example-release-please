@@ -8,7 +8,7 @@ permissions:
   pull-requests: write
   pages: write
 
-name: release-please
+name: Release Please
 
 jobs:
   build:
@@ -22,14 +22,14 @@ jobs:
           for i in {1..100000}; do echo -n 'foobar' >> foobar.txt; done
       - uses: actions/upload-artifact@v4
         with:
-          name: my-artifact
+          name: firmaware
           path: foobar.txt
-          compression-level: 0 # 9 = maximum compression
+          compression-level: 9 # 9 = maximum compression
 
 
   release:
     runs-on: ubuntu-latest
-    name: 🚀 Release 
+    name:  📦 Release 
     needs: build
     environment:
         name: production
