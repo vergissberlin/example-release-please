@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.8](https://github.com/vergissberlin/example-release-please/compare/v0.6.7...v0.6.8) (2024-01-10)
+
+
+### Bug Fixes
+
+* Add more foos, doos ([d7a7f7e](https://github.com/vergissberlin/example-release-please/commit/d7a7f7e7412f901d3e238962f34399d3544bb935))
+
 ## [0.6.7](https://github.com/vergissberlin/example-release-please/compare/v0.6.6...v0.6.7) (2024-01-10)
 
 
