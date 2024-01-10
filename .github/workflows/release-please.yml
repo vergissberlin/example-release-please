@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        runs-on: [foo, bar, moo]
+        runs-on: [foo, bar, moo, boo, doo]
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
