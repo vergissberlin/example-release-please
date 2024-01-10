@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/vergissberlin/example-release-please/compare/v0.6.3...v0.6.4) (2024-01-10)
+
+
+### Bug Fixes
+
+* Use correct path for the upload ([6936f6b](https://github.com/vergissberlin/example-release-please/commit/6936f6ba4d0229b98742af6826016fd6f2ec34f5))
+
 ## [0.6.3](https://github.com/vergissberlin/example-release-please/compare/v0.6.2...v0.6.3) (2024-01-10)
 
 
