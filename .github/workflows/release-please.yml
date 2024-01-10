@@ -35,6 +35,7 @@ jobs:
         with:
           release-type: simple
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
+
       - name: Get the release URL
         run: |
           echo "Upload URL: ${{ steps.release.outputs.upload_url }}"
