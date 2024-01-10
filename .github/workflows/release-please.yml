@@ -46,6 +46,7 @@ jobs:
           echo "Asset name: ${{ steps.release.outputs.asset_name }}"
           echo "Asset ID: ${{ steps.release.outputs.asset_id }}"
           echo "Asset URL: ${{ steps.release.outputs.asset_url }}"
+          echo "FROM UPLAID Asset URL: ${{ steps.create_release.outputs.upload_url }}
           echo "Release URLLLLS: ${{ steps.release_url }}"
           echo "Created: ${{ steps.release.outputs.release_created }}"
           echo "Tag name: ${{ steps.release.outputs.tag_name }}"
