@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.6](https://github.com/vergissberlin/example-release-please/compare/v0.6.5...v0.6.6) (2024-01-10)
+
+
+### Bug Fixes
+
+* Download also in this job ([97c548c](https://github.com/vergissberlin/example-release-please/commit/97c548c89fbd2e3e7419c172ad7993a2a1b0ebb0))
+* Print out the current file ([9851f33](https://github.com/vergissberlin/example-release-please/commit/9851f3368152608f595f346160bf626b547d0bc0))
+
 ## [0.6.5](https://github.com/vergissberlin/example-release-please/compare/v0.6.4...v0.6.5) (2024-01-10)
 
 
