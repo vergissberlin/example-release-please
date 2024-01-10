@@ -13,19 +13,20 @@ name: Release Please
 jobs:
   build:
     name: 🏗️ Build
+    strategy:
+      matrix:
+        runs-on: [foo, bar]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Make a file with a lot of repeated text
         run: |
-          for i in {1..1000}; do echo -n 'foo' >> foo.txt; done
-          for i in {1..1000}; do echo -n 'bar' >> bar.txt; done
+          for i in {1..1000}; do echo -n '${{ matrix.runs-on }}' >> ${{ matrix.runs-on }}.txt; done
       - uses: actions/upload-artifact@v4
         with:
-          name: foo
-          path: ./foo.txt
-          if-no-files-found: error
+          name: my-artifact-${{ matrix.runs-on }}
+          path: ./${{ matrix.runs-on }}.txt
           compression-level: 0 # 9 = maximum compression
 
 
@@ -47,15 +48,15 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          name: foo
-          path: ./foo.txt
-
-
+          path: my-artifact
+          pattern: my-artifact-*
+          merge-multiple: true
 
       - name: List all files
         run: |
+          ls -R
           ls -lisah
-          ls foo.txt
+          ls -R my-artifact
 
       - name: Upload release asset foo
         if: ${{ steps.release.outputs.upload_url }}
