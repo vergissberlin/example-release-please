@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.5](https://github.com/vergissberlin/example-release-please/compare/v0.6.4...v0.6.5) (2024-01-10)
+
+
+### Bug Fixes
+
+* Add separae upload with matrix ([d899eeb](https://github.com/vergissberlin/example-release-please/commit/d899eeb6abbd7dafcd6b8ba9551e5336d1c2c956))
+* Add separae upload with matrix and names ([679b34f](https://github.com/vergissberlin/example-release-please/commit/679b34ff3593fa648bfa27158b7587757408d932))
+* Safe the upload url in outputs of release ([62a604c](https://github.com/vergissberlin/example-release-please/commit/62a604cff1160ed1145e84ad6d02a732f8e75964))
+* Use outputs correctly ([5d64632](https://github.com/vergissberlin/example-release-please/commit/5d646326806d4edbdc930a419b5a66d597fcdeb2))
+* Use outputs correctly, aha ([46c68f8](https://github.com/vergissberlin/example-release-please/commit/46c68f82f98fd39d34e8f1b57d5584511a0defcc))
+* Use outputs correctly, or ([d0ae916](https://github.com/vergissberlin/example-release-please/commit/d0ae916d04fb26541aafc264b0b0acad0e59dc0d))
+* Use outputs correctly, upload-url ([3363b72](https://github.com/vergissberlin/example-release-please/commit/3363b727d6362deb8213c76699e5fc5ba5fc17d0))
+
 ## [0.6.4](https://github.com/vergissberlin/example-release-please/compare/v0.6.3...v0.6.4) (2024-01-10)
 
 
