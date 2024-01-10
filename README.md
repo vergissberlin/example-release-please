@@ -13,6 +13,7 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Do I have to mention the PR number in the commit message?
 - I see, it automatically adds the fixes to the existing pull requests. That's nice!
 - And add a fix to the feature super branch?
+- I like that fixes
 
 ## 🐣 Features
 
