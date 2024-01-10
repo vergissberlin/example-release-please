@@ -11,7 +11,7 @@ permissions:
 name: Release Please
 
 jobs:
-  release:
+  build:
     name: 🏗️ Build
     runs-on: ubuntu-latest
     steps:
@@ -26,6 +26,11 @@ jobs:
           name: firmware
           path: foo.txt
           compression-level: 0 # 9 = maximum compression
+
+  release:
+    name: 📦 release
+    runs-on: ubuntu-latest
+    steps:
 
       - uses: google-github-actions/release-please-action@v4
         id: release
