@@ -5,3 +5,4 @@ This is an example repository for [release-please](https://github.com/googleapis
 ## Release notes
 
 - This ist an very important fix
+- And another important fix here
