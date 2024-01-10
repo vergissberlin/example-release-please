@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/vergissberlin/example-release-please/compare/v0.0.1...v0.1.0) (2024-01-10)
+
+
+### Features
+
+* New awesome feature ([60cddac](https://github.com/vergissberlin/example-release-please/commit/60cddacb67c6578fc2c76c2a833c32792c4708e6))
+
 ## [0.0.1](https://github.com/vergissberlin/example-release-please/compare/v0.0.1...v0.0.1) (2024-01-10)
 
 
