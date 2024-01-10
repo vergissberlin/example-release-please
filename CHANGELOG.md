@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://github.com/vergissberlin/example-release-please/compare/v0.5.0...v0.6.0) (2024-01-10)
+
+
+### Features
+
+* Add another asset ([4821945](https://github.com/vergissberlin/example-release-please/commit/48219454e329d1cac51de829de7ad6251a58e01c))
+
+
+### Bug Fixes
+
+* Remove unused code ([26c449c](https://github.com/vergissberlin/example-release-please/commit/26c449cb6edf2293ab44574b86bfaa1db0f86c78))
+
 ## [0.5.0](https://github.com/vergissberlin/example-release-please/compare/v0.4.1...v0.5.0) (2024-01-10)
 
 
