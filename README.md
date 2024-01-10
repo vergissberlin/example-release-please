@@ -6,3 +6,4 @@ This is an example repository for [release-please](https://github.com/googleapis
 
 - This ist an very important fix
 - And another important fix here
+- We are not done yet. How about combining multiple commits in one pull request?
