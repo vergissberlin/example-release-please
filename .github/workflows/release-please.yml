@@ -23,7 +23,7 @@ jobs:
           for i in {1..1000}; do echo -n 'bar' >> bar.txt; done
       - uses: actions/upload-artifact@v4
         with:
-          name: foo
+          name: foo.txt
           path: foo.txt
           if-no-files-found: error
           compression-level: 0 # 9 = maximum compression
