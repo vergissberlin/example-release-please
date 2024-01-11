@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/vergissberlin/example-release-please/compare/v0.7.0...v0.7.1) (2024-01-11)
+
+
+### Bug Fixes
+
+* Use latest checkout action ([9bb2e28](https://github.com/vergissberlin/example-release-please/commit/9bb2e28be9ae19b6ddd4cf79b26c1eabee2651ec))
+
 ## [0.7.0](https://github.com/vergissberlin/example-release-please/compare/v0.6.8...v0.7.0) (2024-01-11)
 
 
