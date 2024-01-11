@@ -18,7 +18,7 @@ jobs:
         runs-on: [foo, bar, moo, boo, doo]
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Make a file with a lot of repeated text
         run: |
           for i in {1..1000}; do echo -n '${{ matrix.runs-on }}' >> ${{ matrix.runs-on }}.txt; done
