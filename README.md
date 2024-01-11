@@ -19,6 +19,7 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Add new feature for testing
 - And one more feature
 - Okay, one more!
+- Make it work please!
 
 ## 🐣 Features
 
