@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.7.0](https://github.com/vergissberlin/example-release-please/compare/v0.6.8...v0.7.0) (2024-01-11)
+
+
+### Features
+
+* Do not use config files ([834f188](https://github.com/vergissberlin/example-release-please/commit/834f188f9619e48af8ba78de745ab4be3ebee3fe))
+* Use config files ([7279968](https://github.com/vergissberlin/example-release-please/commit/7279968322317ecec66561be978b43d166fab638))
+* Use config files for release please ([f964bd8](https://github.com/vergissberlin/example-release-please/commit/f964bd8fd2d2ca341da872a0dae74b5907165c85))
+* Use config files for release please ([a753e8f](https://github.com/vergissberlin/example-release-please/commit/a753e8fdb02707d14046c260c413c81c31f742b9))
+
 ## [0.6.8](https://github.com/vergissberlin/example-release-please/compare/v0.6.7...v0.6.8) (2024-01-10)
 
 
