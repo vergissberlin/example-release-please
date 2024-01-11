@@ -20,6 +20,7 @@ This is an example repository for [release-please](https://github.com/googleapis
 - And one more feature
 - Okay, one more!
 - Make it work please!
+- Super duper
 
 ## 🐣 Features
 
