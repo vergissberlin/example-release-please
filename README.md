@@ -29,6 +29,10 @@ This is an example repository for [release-please](https://github.com/googleapis
 - Creates release notes
 - Creates CHANGELOG.md
 
+## Example App
+
+This repository comes with a example weg application. It is included in the `app` folder.
+
 ### Custom features
 
 - I just added a new feature in a feature branch. Let's see what happens.
