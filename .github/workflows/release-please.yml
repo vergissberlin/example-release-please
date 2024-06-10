@@ -35,13 +35,13 @@ jobs:
     outputs:
       upload-url: ${{ steps.release.outputs.upload_url }}
     steps:
-      - uses: google-github-actions/release-please-action@v4
+      - uses: googleapis/release-please-action@v4
         id: release
         with:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           release-type: simple
-          # config-file: .release-please-config.json
-          # manifest-file: .release-please-manifest.json
+          config-file: .release-please-config.json
+          manifest-file: .release-please-manifest.json
 
       - name: Print the release URL if present
         if: ${{ steps.release.outputs.upload_url }}
