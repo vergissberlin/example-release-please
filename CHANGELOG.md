@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.8.3](https://github.com/vergissberlin/example-release-please/compare/v0.7.2...v0.8.3) (2024-06-12)
+
+
+### Features
+
+* **index.html:** add initial HTML structure for the Example App with Tailwind CSS for styling ([c536fa0](https://github.com/vergissberlin/example-release-please/commit/c536fa0093265532a22dca83c72188a9d5410290))
+* **index.html:** add welcome section with buttons to improve user engagement ([653667a](https://github.com/vergissberlin/example-release-please/commit/653667a2b7998d529abb9f85ffad504967019c67))
+* **robots.txt:** add robots.txt to manage web crawlers' access to site ([7e86c35](https://github.com/vergissberlin/example-release-please/commit/7e86c35361262f5a665f3f2155aedcd1b5253876))
+* **sitemap.xml:** add sitemap.xml for better SEO and site indexing ([f656911](https://github.com/vergissberlin/example-release-please/commit/f65691172a5d0360705b13dd6e0c7fc740829bbc))
+
+
+### Bug Fixes
+
+* **index.html:** correct typo in placeholder text for better readability ([dbc925c](https://github.com/vergissberlin/example-release-please/commit/dbc925c39fa31745067c9bf12a63b7249264f2df))
+* **index.html:** correct typos in placeholder text to maintain readability ([81ff441](https://github.com/vergissberlin/example-release-please/commit/81ff441b53107e11fb5a43d7cfd96cb19ea00308))
+
+
+### Miscellaneous Chores
+
+* release 0.8.1 ([aa1e4bd](https://github.com/vergissberlin/example-release-please/commit/aa1e4bd5fee72c2fbc1bae5f94516db160ba3a8b))
+* release 0.8.2 ([7d02922](https://github.com/vergissberlin/example-release-please/commit/7d02922b89ec846989bdcc479c8bb3ebf164b626))
+* release 0.8.3 ([5d3a3eb](https://github.com/vergissberlin/example-release-please/commit/5d3a3ebd152dcf76e0bd2dcbaf8b36c3869d79d7))
+
 ## [0.7.2](https://github.com/vergissberlin/example-release-please/compare/v0.7.1...v0.7.2) (2024-01-11)
 
 
